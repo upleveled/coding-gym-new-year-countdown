@@ -1,2 +1,3 @@
-# coding-gym-new-year-countdown
-Coding Gym: Count down to the next New Year
+# Coding Gym: New Year Countdown
+
+Count down to the next New Year
