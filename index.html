@@ -183,7 +183,7 @@ export function createCountdown(targetDate, onUpdate, onComplete) {
       <h2>Step 4: Initialize the Countdown</h2>
       <p>In <code>app.js</code>, initialize and manage the countdown:</p>
       <pre class="code-block lang-js">
-import confetti from 'https://esm.sh/canvas-confetti@1.6.0';
+import confetti from 'https://esm.sh/canvas-confetti@1.9.3';
 import { createCountdown } from './countdown.js';
 
 const countdownElement = document.querySelector('.countdown-timer');
@@ -349,12 +349,16 @@ h1 {
 
       <p>
         You're done! The preview URL at the top right of the CodeSandbox editor
-        (ending in <code>csb.app/</code>)is your website.
+        (ending in <code>csb.app/</code>) is your website.
       </p>
 
+      <h2>Step 6 (stretch goal): Deploy to Netlify</h2>
       <p>
-        Since CodeSandbox URLs sometimes stop working, you may want to also
-        deploy to Netlify. You can do that by clicking on the
+        CodeSandbox URLs can sometimes stop working. To work around this,
+        deploying to another platform like Netlify is an option.
+      </p>
+      <p>
+        Do this by clicking on the
         <strong>Download</strong>
         button at the top left of CodeSandbox and then dragging the downloaded
         ZIP file into
@@ -367,7 +371,7 @@ h1 {
       </p>
 
       <script type="module">
-        import { codeToHtml } from 'https://esm.sh/shiki@1.0.0';
+        import { codeToHtml } from 'https://esm.sh/shiki@1.24.4';
 
         document.querySelectorAll('.code-block').forEach(async (block) => {
           const langClass = Array.from(block.classList).find((cls) =>
