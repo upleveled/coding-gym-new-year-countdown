@@ -194,7 +194,7 @@ const currentYear = new Date().getFullYear();
 const targetDate = new Date(`1 Jan ${
   // If it's the first 10 minutes of the new year, set the target
   // year to the current year, to be able to see the celebration
-  now.getMonth() === 0 && now.getDate() === 1 && now.getHours() === 0 && now.getMinutes() < 10
+  new Date().getMonth() === 0 && new Date().getDate() === 1 && new Date().getHours() === 0 && new Date().getMinutes() < 10
     ? currentYear
     : currentYear + 1
 } 00:00:00`);
